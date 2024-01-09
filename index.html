@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behlah Katleriwala</title>
+    <link rel ="stylesheet" href="styles.css"/> 
+    <script src="https://kit.fontawesome.com/a25d21d0ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id ="header">
+        <div class="container">
+            
+            <nav>
+                <img src="Logo.jpg" class="logo">
+                <ul>
+                    <li><a href = "#">Home</a></li>
+                    <li><a href = "#">About</a></li>
+                    <li><a href = "#">Services</a></li>
+                    <li><a href = "#">Portfolio</a></li>
+                    <li><a href = "#">Contact me</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h6>Software developer based off of Kamloops</h6>
+                <p>My name is <span>Behlah</span> and I am a junior softare<br> developer from kamloops, BC. I am studying<br> in TRU and I am currently in my third year. I<br> am developing this website to showcase my<br> skills and personal projects.</p>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+   
+    <div id ="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="pfp3.jpg">
+                </div>
+                    
+                <div class="col-2"> 
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I welcome you to my website. My name is Behlah and I am immensely passionate about coding. The reason why almost every software developer codes is to get that feeling of accomplishing a task.
+                        I grew up in Tanzania, part of the East African Community as of today and I have been interested in how code works and what are the applications of modern day programming languages since the age of 14.
+                        My main interest currently is to develop apps and websites and ensure responsiveness , however I would like to learn machine learning and its applications someday as well. I am currently well versed with a bunch of languages and tools in the programming world.
+                        I love <span>Python</span> as it was the first language I learned 5 years ago and I have gotten very strong at it. I also have learnt <span>Java, C, C#, HTML, CSS, Javascript and many more</span>. I have worked with various developer tools such as <span>Android Studio, Visual Studio Code, VS Code, IntelliJ, Git, Github</span>and I am learning <span> AWS, React.js and applications of CRUD</span>
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Website Development</li>
+                            <li><span>App Development</span><br>Android/IOS App Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>No experience at a company yet</span><br></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>B.Cs - Thompson Rivers University <br> Deans List - Fall 2021</li>
+                            <li><span>2021</span><br>Indian School Dar- Es- Salaam <br> Rank 3 in entire school with 93.6%</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>More text on web design</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Python Coding</h2>
+                    <p>More text on python coding</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p>More text on app design and development</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Works</h1>
+            <div class="work-list">
+                <div class="work"></div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablink= document.getElementsByClassName("tab-link");
+        var tabcontent = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname){
+            for(tl of tablink){
+                tl.classList.remove("active-link");
+            }
+            for(tc of tabcontent){
+                tc.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+}
+    </script>
+    
+    
+</body>
+</html> 
